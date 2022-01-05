@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="Reset.css"> подключение файла для сброса стилей CSS файла style.css-->
+    <!--подключение файла Scc-->
+    <title>CSS</title>
+
+    <!--Способ указания размера шрифта через тег style-->
+    <style>
+        h2 {
+            font-size: 20px;
+        }
+
+        div {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        body {
+            background:
+                rgba(115, 128, 0, 0.027);
+            }
+    </style>
+
+    <!--Селектор по классу-->
+    <style>
+        .news {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .left {
+            text-align: left;
+            color: chocolate;
+            font-weight: 100;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .center1 {
+            text-align: center;
+            color: chocolate;
+            font-weight: 600;
+            font-size: 18px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .right {
+            text-align: right;
+            color: chocolate;
+            font-weight: 900;
+            font-size: 18px;
+            text-decoration: line-through;
+        }
+    </style>
+
+
+ <!--Селектор по идентификатору-->
+ <style>
+    #news333 {
+        color: fuchsia;
+        font-weight: bold;
+        font-size: 30px;
+    }
+</style>
+
+ <!--Управление шрифтом через несколько селекторов-->
+ <style>
+    .Tcolor {
+        color: red;
+
+    }
+
+    #Tbold {
+        font-weight: bold;
+        font-size: 30px;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <p class="news">Управление шрифтом через селектор по классу</p>
+
+
+    <p class="left"> Слева</p>
+    <p class="center1"> По центру </p>
+    <p class="right"> Справа</p>
+
+   
+    <p id="news333">Управление шрифтом через селектор по идентификатору</p>
+
+
+
+
+
+   
+    <p class="Tcolor" , id="Tbold">Управление шрифтом через несколько селекторов</p>
+
+
+
+    <h2>
+        Заголовок 20px
+    </h2>
+
+
+    <!--Способ указания размера шрифта через атрибут style-->
+
+    <p style="font-size: 25px;">Демонстрация возможностей
+        стилей CSS</p>
+
+    <div style="font-size: 20px;">
+        Размер шрифта, которым написан этот текст — 20 пикселей.
+        <p style="font-size: 15px;">Вложенный параграф также будет иметь размер шрифта 15 пикселей.</p>
+    </div>
+    <h2 style="font-size: 50px;">
+        Заголовок 50px
+    </h2>
+
+
+
+
+    <div>
+        Этот текст будет с размером шрифта 20 пикселей
+
+        <p>Вложенный параграф будет иметь размер шрифта 10 пикселей</p>
+        <p>Вложенный параграф будет иметь размер шрифта 10 пикселей</p>
+        <p>Вложенный параграф будет иметь размер шрифта 10 пикселей</p>
+    </div>
+
+
+
+    <!--задания свойства надписи из класса text-block стилей CSS-->
+    <article>
+        <p><span class="text-block">Absolutely new
+                text </span> </p>
+    </article>
+
+    <p class="paragraph777">Цвет текста параграфа устанавливаться с помощью класса paragraph777 в CSS</p>
+
+
+
+    <style>
+        @keyframes color-change {
+            0% {
+                color: #fa7268;
+            }
+
+            50% {
+                color: #fff;
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        .card-hello {
+            animation: color-change 7s infinite;
+            width: 160px;
+            height: 25px;
+            padding: 20px;
+            margin: 10px;
+            color: #fff;
+            font-size: 20px;
+            background-color: #fa7268;
+            border: 2px solid #9c27b0;
+            
+
+        }
+    </style>
+
+    <div class="card-hello">Отдельный блок</div>
+
+
+
+    <img src="image/margin_Padding.png" alt="Границы блока" width="30%">
+
+
+
+
+    <style>
+        @keyframes color-change2 {
+            0% {
+                color: #fa7268;
+            }
+
+            50% {
+                color: #fff;
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        .menu-Welcome {
+            position: fixed;
+            top: 0px;
+            left: 600px;
+
+            animation: color-change2 7s infinite;
+            width: 200px;
+            height: 20px;
+            padding: 10px;
+            /*margin: 10px;*/
+            color: #fff;
+            font-size: 20px;
+            background-color: #fa7268;
+            border: 2px solid #9c27b0;
+
+        }
+    </style>
+
+    <div class="menu-Welcome">Менюшка</div>
+
+
+
+    <style>
+        .border-dotted {
+            border: 5px solid blue;
+            background-color: pink;
+            margin: 5px 0px 5px 0px;
+        }
+
+        .lineHeight {
+            line-height: 15px;
+            font-size: 20px;
+            font-family: fantasy;
+            border: 5px dashed orchid;
+            padding: 10px 1px 10px 20px;
+        }
+
+        .linelow {
+            line-height: 21px;
+            font-size: 14px;
+            padding: 10px 2px 10px 20px;
+            border: 5px dashed rgb(154, 47, 255);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+
+
+
+    <div class="border-dotted">
+        <h2 style="font-size: 40px; text-align: center;  color:darkgreen;">
+            Межстрочное расстояние
+        </h2>
+
+        <p class="lineHeight"> Недостаточное межстрочное расстояние. Недостаточное межстрочное расстояние. Недостаточное
+            межстрочное расстояние. Недостаточное межстрочное расстояние. Недостаточное межстрочное расстояние.
+            Недостаточное межстрочное расстояние.Недостаточное межстрочное расстояние. Недостаточное межстрочное
+            расстояние.
+            Недостаточное межстрочное расстояние.Недостаточное межстрочное расстояние. Недостаточное межстрочное
+            расстояние.
+            Недостаточное межстрочное расстояние.Недостаточное межстрочное расстояние. Недостаточное межстрочное
+            расстояние.
+            Недостаточное межстрочное расстояние.</p>
+        <p class="linelow">Оптимальное межстрочное расстояние. Оптимальное межстрочное расстояние.Оптимальное
+            межстрочное
+            расстояние. Оптимальное межстрочное расстояние.Оптимальное межстрочное расстояние. Оптимальное межстрочное
+            расстояние.Оптимальное межстрочное расстояние. Оптимальное межстрочное расстояние.Оптимальное межстрочное
+            расстояние. Оптимальное межстрочное расстояние.Оптимальное межстрочное расстояние. Оптимальное межстрочное
+            расстояние.Оптимальное межстрочное расстояние. Оптимальное межстрочное расстояние.Самым распространённым
+            межстрочным интервалом является значение в 150% от размера шрифта. Если текст размером 14 пикселей, то
+            межстрочный интервал желательно установить не менее 21 пикселя.</p>
+
+
+
+
+    </div>
+
+
+
+    <article class="border-dotted">
+
+        <h2 style="font-size: 40px; text-align: center;  color:darkgreen;">
+            Обобщённое правило для шрифтов
+        </h2>
+
+        <style>
+            .General1 {
+                font: italic bold 24px Arial, fantasy;
+                border: 5px dotted rgb(154, 47, 255);
+            }
+        </style>
+        <p class="General1">Жирный курсив с размером шрифта 24 пикселя из семейства Arial</p>
+    </article>
+
+
+    <style>
+        .header {
+            font-size: 22px;
+            /* Здесь значение указано абсолютное и всегда будет равняться 45 пикселям */
+        }
+
+        .offer {
+            font-size: 110%;
+            /* Относительное значение. В данном случае высчитывается от значения в классе .big-text и будет равно 67.5 пикселей. При изменении значения в классе .big-text данное значение будет пересчитано автоматически */
+        }
+    </style>
+
+    <div class="header">
+        Здесь большой текст размером 22px
+        <p class="offer">Здесь текст на 10% больше</p>
+        Но почему-то, что в &ltp&gt &lt/p&gt не принимает значение от того, что указано в div. Это потому что в начале
+        страницы уже заданы размеры шрифта по умолчанию для текста всех параграфов &ltp&gt &lt/p&gt
+
+
+    </div>
+
+    <!--color: rgba(255, 255, 255, 0.5) // Полупрозрачный белый цвет
+    color: rgba(0, 0, 0, 1) // Непрозрачный чёрный цвет-->
+
+    <footer>Нижний колонтитул</footer>
+
+
+
+
+</body>
+
+</html>
