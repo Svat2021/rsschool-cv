@@ -64,7 +64,7 @@ body main {
     align-items: center;
     flex-wrap:wrap;
      padding-left: 20px;
-     min-height: 85vh;
+     min-height: 90vh;
 }
 
 .main-container1 {
@@ -91,6 +91,7 @@ body main {
     margin: 10px 0px 10px 0px;
   
      }
+    
   
   .item-2 {
     background:none;
@@ -176,6 +177,7 @@ code {
     padding: 4px;
     background: #dad6cf;
     border: 2px solid #c2b59d;
+    width: 200px;
    }
    .logo {
     display: flex;
@@ -183,8 +185,14 @@ code {
     align-items: flex-end;
     flex-wrap:wrap;
    }
+   .logo img {
+    width: 100px;
+   }
  .year {
   font-size: 19px;
   font-weight: 400;
   letter-spacing: 2px;
  }
+ #photo {
+  width: 20vw;
+}
